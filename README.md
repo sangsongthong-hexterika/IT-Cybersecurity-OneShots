@@ -22,3 +22,7 @@ The content in this repository is based on personal experiments and research. It
 ---
 
 Feel free to explore and discuss any findings!
+
+**Sangsongthong**
+| ***Hexterika Cyberlab***
+| ***Founder, CEO, and Sole Worker***
