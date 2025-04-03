@@ -81,4 +81,18 @@ Conclusion
 
 This simple test highlights how security policies evolve over time. Browsers are stepping up defenses against unsafe downloads, but alternative methods still exist. Organizations should not only rely on browser security but also monitor network and endpoint activity to mitigate risks.
 
+## Summary
+
+In order to bypass the default insecured download protection by modern web browsers, ones can do so by using commandlines.
+
+I have tested it through the below methods.
+
+1. PowerShell - `wget`
+2. Ubuntu WSL Terminal - `wget`
+3. Command Prompt - `curl`
+
+## Mitigation
+
+Coming Soon!
+
 What are your thoughts? Have you encountered similar restrictions or workarounds? Let’s discuss!
