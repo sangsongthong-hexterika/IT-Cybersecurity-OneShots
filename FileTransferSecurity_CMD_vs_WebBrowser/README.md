@@ -35,15 +35,11 @@ As you can see in the screenshot below, the file was successfully downloaded eve
 
 As you can see, the downloaded result was 200 which indicated that the download was a success.
 
+![kaliVMshowDownloadSuccessAfterUsingWGET-onPS](Images/kaliVMshowDownloadSuccessAfterUsingWGET-onPS.png)
+
 ![kaliVMshowDownloadSuccessAfterUsingWGET-onPS-AndCMD](Images/kaliVMshowDownloadSuccessAfterUsingWGET-onPS-AndCMD.png)
 
-![kaliVMshowDownloadSuccessAfterUsingWGET-onPS](Images/kaliVMshowDownloadSuccessAfterUsingWGET-onPS.png)
 ![kaliVMshowDownloadSuccessAfterUsingWGET-onUbuntuWSL-Terminal](Images/kaliVMshowDownloadSuccessAfterUsingWGET-onUbuntuWSL-Terminal.png)
-
-![useCMD-ToBypassHTTPSDownloadRestriction](Images/useCMD-ToBypassHTTPSDownloadRestriction.png)
-![useCMD-ToBypassHTTPSDownloadRestriction2](Images/useCMD-ToBypassHTTPSDownloadRestriction2.png)
-
-![useUbuntuWSL-Terminal-ToBypassHTTPSDownloadRestriction](Images/useUbuntuWSL-Terminal-ToBypassHTTPSDownloadRestriction.png)
 
 I tested file downloads from an HTTP Python server using:
 
@@ -51,15 +47,21 @@ Google Chrome → Blocked.
 
 Command Prompt (cmd) with wget → Allowed.
 
+![useCMD-ToBypassHTTPSDownloadRestriction](Images/useCMD-ToBypassHTTPSDownloadRestriction.png)
+
+![useCMD-ToBypassHTTPSDownloadRestriction2](Images/useCMD-ToBypassHTTPSDownloadRestriction2.png)
+
+![useUbuntuWSL-Terminal-ToBypassHTTPSDownloadRestriction](Images/useUbuntuWSL-Terminal-ToBypassHTTPSDownloadRestriction.png)
+
 PowerShell with Invoke-WebRequest → Allowed.
 
 Ubuntu WSL Terminal with wget → Allowed.
 
 Despite Chrome enforcing strict security policies, CLI tools had no issue retrieving the file. This means that even though browsers are getting better at preventing unsafe downloads, alternative delivery methods still work.
 
-Security Implications
+## Security Implications
 
-For Pentesters & Attackers:
+### For Pentesters & Attackers
 
 File delivery must be more sophisticated. Options include:
 
@@ -69,7 +71,7 @@ Leveraging command-line tools to bypass browser restrictions.
 
 Setting up an HTTPS server instead of relying on plain HTTP.
 
-Defensive Takeaways:
+### Defensive Takeaways
 
 Enforce HTTPS for internal tools and file transfers where possible.
 
@@ -77,9 +79,11 @@ Monitor network traffic for unusual HTTP downloads, especially from CLI tools.
 
 Apply endpoint protection that scans for potentially malicious files beyond browser-based protections.
 
-Conclusion
+## Conclusion
 
 This simple test highlights how security policies evolve over time. Browsers are stepping up defenses against unsafe downloads, but alternative methods still exist. Organizations should not only rely on browser security but also monitor network and endpoint activity to mitigate risks.
+
+---
 
 ## Summary
 
@@ -91,8 +95,12 @@ I have tested it through the below methods.
 2. Ubuntu WSL Terminal - `wget`
 3. Command Prompt - `curl`
 
+---
+
 ## Mitigation
 
 Coming Soon!
+
+---
 
 What are your thoughts? Have you encountered similar restrictions or workarounds? Let’s discuss!
