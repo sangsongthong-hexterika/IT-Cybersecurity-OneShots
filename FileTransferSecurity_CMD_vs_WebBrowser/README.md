@@ -60,10 +60,10 @@ Downloading the file using `wget` in the Ubuntu WSL terminal also worked without
 
 | Transfer Method            | Download Success |
 | :------------------------: | :--------------: |
-| Google Chrome              | ❌ Blocked |
-| Command Prompt (wget)      | ✅ Allowed |
-| PowerShell (wget)          | ✅ Allowed |
-| Ubuntu WSL Terminal (wget) | ✅ Allowed |
+| Google Chrome              | Blocked |
+| Command Prompt (wget)      | Allowed |
+| PowerShell (wget)          | Allowed |
+| Ubuntu WSL Terminal (wget) | Allowed |
 
 Despite modern browsers enforcing strict security policies, CLI tools had no issues retrieving the file. This suggests that while browser-based security is improving, alternative file transfer methods remain viable.
 
