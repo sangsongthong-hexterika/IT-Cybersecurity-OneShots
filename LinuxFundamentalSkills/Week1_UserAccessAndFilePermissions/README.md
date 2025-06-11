@@ -45,6 +45,28 @@ This makes it easy to roll back if something breaks during experiments.
 
 Now that the server is up, it's time to dive into Week 1 tasks: user management, permissions, and access control.
 
+### Scenario Setting and Introduction
+
+In this scenario, I am going to appoint myself as the sysadmin who is responsible to setup and manage the Ubuntu Server of a fictional company called Hexterika Vamps. This company sells vampire blood for healing people according the law of the Vampire Diaries that I had just finished watching last week. It's a fictional company so bare with me. I was going to make this company sells snake oil but it feels too cliche. The users came from any fictionals characters I have watched from TV Series and Anime.
+
+Inside this company, there are 4 departments: IT, Sales & Marketing, Executives, Finance, and Legal.
+
+| Department        | Users                                                 |
+| :----------------:| :---------------------------------------------------: |
+| IT                | Felicity Smoak, Charlie Bradberry, Toshiko Sato       |
+| Executives        | Captain Jack Harkness, Chrollo Lucilfer, Marcel Gerad |
+| Sales & Marketing | Lucifer Morningstar, Damon Salvatore, Hisoka Marrow   |
+| Finance           | Klaus Mikealson, Caroline Forbs, Ianto Jones          |
+| Legal             | Elijah Mikealson, Laura Lance, Crowley MacLeod        |
+
+### Groups & Users Management
+
+I created a new group using `groupadd` and `useradd`.
+
+## References
+
+[groupadd-linux-command](https://ioflood.com/blog/groupadd-linux-command/)
+
 ---
 
 **Author**: Sangsongthong C.  
